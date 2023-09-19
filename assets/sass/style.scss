@@ -1,0 +1,143 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+Theme Name:  Morange - eCommerce HTML5 Template
+Version:        1.0.0
+-------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+
+1. General
+	1.1 Theme Reset Style
+	1.2 Global Elements
+
+2. header
+	2.1 topbar
+	2.2 navigation
+
+3. content
+	3.1 wpo-hero-slider
+	3.2 Morange-featured-section
+	3.3 Morange-offer-section
+	3.4 Morange-upcoming-offer-section
+	3.5 Morange-special-product-section
+	3.6 Morange-interestproduct-section
+	3.7 Morange-trendingproduct-section
+	3.8 Morange-highlight-product-section
+	3.9 Morange-cta-section
+
+4. wpo-footer
+
+5. Home-style-2
+   5.1 Morange-category-section
+   5.2 Morange-banner-section
+   5.3 wpo-about-section
+   5.4 wpo-service-section
+   5.5 Morange-partners-section
+   5.6 Morange-product-category-section
+   5.7 Morange-gallery-section
+   5.8 wpo-blog-section
+
+6. Shop-Page
+
+7. Product-Single
+
+8. wpo-wishlist-page
+
+9. wpo-cart-page
+
+10. wpo-checkout-page-style
+
+11. Morange-compare-section
+
+12. wpo-order-page-style
+
+13. Morange-vendor-section
+
+14. wpo-blog-pg-section
+
+15. wpo-blog-single-section
+
+16. wpo-faq-page
+
+17. login-design
+
+18. wpo-contact-pg-section
+
+19. error-404-section
+
+----------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+1. General
+----------------------------------------------------------------*/
+
+// helpers
+@import "helpers/variables";
+@import "helpers/functions";
+@import "helpers/mixins";
+
+// base
+@import "base/base";
+
+
+// components
+@import "components/section-title";
+@import "components/buttons";
+@import "components/form";
+@import "components/social-links";
+@import "components/page-title";
+@import "components/preloader";
+@import "components/blog-sidebar";
+@import "components/pagination";
+@import "components/modal";
+
+// layout
+@import "layout/header";
+@import "layout/hero-slider";
+@import "layout/footer";
+
+// components
+@import "components/sticky-header";
+
+
+// page
+@import "page/home-default";
+
+@import "page/listing";
+
+
+@import "page/product";
+
+@import "page/product-single";
+
+@import "page/wishlist";
+
+@import "page/cart";
+
+@import "page/checkout";
+
+@import "page/compare";
+
+@import "page/order";
+
+@import "page/vendor";
+
+@import "page/_blog";
+
+@import "page/_blog-single";
+
+@import "page/faq";
+
+@import "page/auth-page";
+
+@import "page/contact";
+
+@import "page/error-404";
+
+
+
+

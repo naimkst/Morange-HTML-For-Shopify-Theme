@@ -1,0 +1,109 @@
+/*===============================
+11. Morange-compare-section
+================================*/
+
+.Morange-compare-section {
+    padding: 50px;
+    padding-bottom: 0;
+
+
+
+    .table {
+        border-color: inherit;
+        border-width: 0;
+
+        tr {
+            border: 1px solid #F1E2CC;
+
+            &:nth-child(6) {
+                td {
+                    .rating-product {
+            
+                        i {
+                            font-size: 13px;
+                            background: linear-gradient(180deg, #FED700 0%, #F78914 100%);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            background-clip: text;
+                        }
+            
+            
+                        span {
+                            font-family: $base-font;
+                            font-weight: 600;
+                            font-size: 15px;
+                            line-height: 19px;
+                            color: $text-light-color;
+                            padding-left: 10px;
+                        }
+                    }  
+                }
+            }
+            &:nth-child(7) {
+                td {
+                    color: $theme-primary-color;
+                }
+            }
+
+            &:nth-child(8) {
+                td {
+                    a {
+                        color: $white;
+                        font-weight: 700;
+                        font-size: 18px;
+                        text-align: center;
+                        background: linear-gradient(180deg, #FED700 0%, #F78914 100%);
+                        border-radius: 5px;
+                        padding:8px 80px;
+                    }
+                }
+            }
+            &:nth-child(9) {
+                td {
+                    a {
+                            display: block;
+                            width: 40px;
+                            height: 38px;
+                            line-height: 45px;
+                            color: $black;
+                            font-size: 14px;
+                            margin: 0 auto;
+                    
+                            .fi {
+                                &::before {
+                                    font-size: 25px;
+                                }
+                            }
+                    }
+                }
+            }
+
+            td {
+                border: 0;
+                border-right: 1px solid #F1E2CC;
+                text-align: center;
+                padding: 15px;
+                min-width: 200px;
+                font-weight: 400;
+                font-size: 18px;
+                color: #6F6F6F;
+
+                &:first-child {
+                    background: #F0F0F0;
+                    font-family: $base-font;
+                    font-size: 18px;
+                    color: #233D50;
+                    font-weight: 400;
+                    min-width: auto;
+                }
+
+                &.text-title {
+                    font-weight: 400;
+                    color: $text-color;
+                    font-family: $base-font;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
