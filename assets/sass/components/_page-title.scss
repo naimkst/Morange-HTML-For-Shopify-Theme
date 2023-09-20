@@ -17,10 +17,32 @@
 		margin-top: 5px;
 	}
 
-	span {
-		font-size: 14px;
-		font-style: normal;
-		font-weight: 400;
-		line-height: 100%;
+	ul {
+		display: flex;
+		margin-bottom: 15px;
+		li {
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 100%;
+			position: relative;
+			text-transform: uppercase;
+
+			&+li {
+				padding-left: 15px;
+				margin-left: 15px;
+
+				&:before {
+					position: absolute;
+					left: 0;
+					top: 0;
+					content: "/";
+				}
+			}
+		}
+	}
+
+	&.s2 {
+		padding-top: 30px;
 	}
 }

@@ -734,9 +734,9 @@
     }
 
 
-     /*------------------------------------------
-        = instagram-slider
-    -------------------------------------------*/
+    /*------------------------------------------
+       = instagram-slider
+   -------------------------------------------*/
     if ($(".instagram-slider").length) {
         $(".instagram-slider").owlCarousel({
             autoplay: true,
@@ -849,37 +849,41 @@
     }
 
     /*------------------------------------------
-        = Trendin Slider
+        = SHOP DETAILS PAGE PRODUCT SLIDER
     -------------------------------------------*/
-    if ($(".trendin-slider").length) {
-        $(".trendin-slider").owlCarousel({
-            autoplay: false,
-            smartSpeed: 300,
-            margin: 20,
-            loop: true,
-            autoplayHoverPause: true,
-            dots: true,
-            navText: ['<i class="ti-angle-left"></i>', '<i class="ti-angle-right"></i>'],
-            nav: false,
-            responsive: {
-                0: {
-                    items: 1,
-                    dots: true,
-                    nav: false
+    if ($(".shop-single-slider").length) {
+        $('.product-for').slick({
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            arrows: true,
+            fade: true,
+            asNavFor: '.product-nav',
+        });
+        $('.product-nav').slick({
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            asNavFor: '.product-for',
+            vertical: true,
+            verticalSwiping: true,
+            focusOnSelect: true,
+            arrows: true,
+            
+            responsive: [
+                {
+                    breakpoint: 500,
+                    settings: {
+                        slidesToShow: 6,
+                        infinite: true
+                    }
                 },
-                768: {
-                    items: 2,
-                },
-                992: {
-                    items: 3,
-                },
+                {
+                    breakpoint: 400,
+                    settings: {
+                        slidesToShow: 5
+                    }
+                }
+            ]
 
-                1200: {
-                    items: 4
-                },
-
-
-            }
         });
     }
 
@@ -920,7 +924,7 @@
 
 
 
-    
+
 
 
 
