@@ -889,154 +889,6 @@
 
 
     /*------------------------------------------
-            = PARTNERS SLIDER
-        -------------------------------------------*/
-    if ($(".partners-slider").length) {
-        $(".partners-slider").owlCarousel({
-            autoplay: true,
-            smartSpeed: 300,
-            margin: 30,
-            loop: true,
-            autoplayHoverPause: true,
-            dots: false,
-            arrows: false,
-            responsive: {
-                0: {
-                    items: 1
-                },
-
-                550: {
-                    items: 3
-                },
-
-                992: {
-                    items: 4
-                },
-
-                1200: {
-                    items: 6
-                }
-            }
-        });
-    }
-
-
-
-
-
-
-
-
-
-
-    /*------------------------------------------
-        = POST SLIDER
-    -------------------------------------------*/
-    if ($(".post-slider".length)) {
-        $(".post-slider").owlCarousel({
-            mouseDrag: false,
-            smartSpeed: 500,
-            margin: 30,
-            loop: true,
-            nav: true,
-            navText: ['<i class="fi ti-arrow-left"></i>', '<i class="fi ti-arrow-right"></i>'],
-            dots: false,
-            items: 1
-        });
-    }
-
-
-    /*------------------------------------------
-        = SHOP DETAILS PAGE PRODUCT SLIDER
-    -------------------------------------------*/
-    if ($(".shop-single-slider").length) {
-        $('.slider-for').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false,
-            fade: true,
-            asNavFor: '.slider-nav'
-        });
-        $('.slider-nav').slick({
-            slidesToShow: 5,
-            slidesToScroll: 1,
-            asNavFor: '.slider-for',
-            focusOnSelect: true,
-            prevArrow: '<i class="nav-btn nav-btn-lt ti-arrow-left"></i>',
-            nextArrow: '<i class="nav-btn nav-btn-rt ti-arrow-right"></i>',
-
-            responsive: [{
-                breakpoint: 500,
-                settings: {
-                    slidesToShow: 3,
-                    infinite: true
-                }
-            },
-            {
-                breakpoint: 400,
-                settings: {
-                    slidesToShow: 2
-                }
-            }
-            ]
-
-        });
-    }
-
-
-
-    /*------------------------------------------
-            = COUNTDOWN CLOCK
-    -------------------------------------------*/
-    if ($("#clock").length) {
-        $('#clock').countdown('2023/03/03', function (event) {
-            var $this = $(this).html(event.strftime('' +
-                '<div class="box"><div><div class="time">%D</div> <span>Days</span> </div></div>' +
-                '<div class="box"><div><div class="time">%H</div> <span>Hours</span> </div></div>' +
-                '<div class="box"><div><div class="time">%M</div> <span>Mins</span> </div></div>' +
-                '<div class="box"><div><div class="time">%S</div> <span>Secs</span> </div></div>'));
-        });
-    }
-
-    /*------------------------------------------
-            = COUNTDOWN CLOCK TWO
-    -------------------------------------------*/
-    if ($("#clock-s2").length) {
-        $('#clock-s2').countdown('2023/08/03', function (event) {
-            var $this = $(this).html(event.strftime('' +
-                '<div class="box"><div><div class="time">%D</div> <span>Days</span> </div></div>' +
-                '<div class="box"><div><div class="time">%H</div> <span>Hours</span> </div></div>' +
-                '<div class="box"><div><div class="time">%M</div> <span>Mins</span> </div></div>' +
-                '<div class="box"><div><div class="time">%S</div> <span>Secs</span> </div></div>'));
-        });
-    }
-    /*------------------------------------------
-            = COUNTDOWN CLOCK 3
-    -------------------------------------------*/
-    if ($("#clock-s3").length) {
-        $('#clock-s3').countdown('2023/06/03', function (event) {
-            var $this = $(this).html(event.strftime('' +
-                '<div class="box"><div><div class="time">%D</div> <span>Days</span> </div></div>' +
-                '<div class="box"><div><div class="time">%H</div> <span>Hours</span> </div></div>' +
-                '<div class="box"><div><div class="time">%M</div> <span>Mins</span> </div></div>' +
-                '<div class="box"><div><div class="time">%S</div> <span>Secs</span> </div></div>'));
-        });
-    }
-    /*------------------------------------------
-            = COUNTDOWN CLOCK 4
-    -------------------------------------------*/
-    if ($("#clock-s4").length) {
-        $('#clock-s4').countdown('2023/05/03', function (event) {
-            var $this = $(this).html(event.strftime('' +
-                '<div class="box"><div><div class="time">%D</div> <span>Days</span> </div></div>' +
-                '<div class="box"><div><div class="time">%H</div> <span>Hours</span> </div></div>' +
-                '<div class="box"><div><div class="time">%M</div> <span>Mins</span> </div></div>' +
-                '<div class="box"><div><div class="time">%S</div> <span>Secs</span> </div></div>'));
-        });
-    }
-
-
-    /*------------------------------------------
         = TOUCHSPIN FOR PRODUCT SINGLE PAGE
     -------------------------------------------*/
     if ($("input[name='product-count']").length) {
@@ -1104,6 +956,8 @@
                 adress: "required",
 
                 name: "required",
+                
+                lname: "required",
 
                 service: "required",
 
@@ -1118,6 +972,7 @@
 
             messages: {
                 name: "Please enter your name",
+                lname: "Please enter your Last name",
                 email: "Please enter your email address",
                 adress: "Please enter your adress",
                 service: "Please select your contact service",

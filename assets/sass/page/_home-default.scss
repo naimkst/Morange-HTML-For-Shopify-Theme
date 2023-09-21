@@ -873,6 +873,12 @@
 
 .features-section {
     .features-text {
+
+        @media(max-width:575px){
+           text-align: center;
+           margin-bottom: 30px;
+        }
+
         h2 {
             font-size: 17px;
             font-style: normal;
@@ -898,6 +904,7 @@
 
 .instagram-section {
     position: relative;
+    overflow: hidden;
 
     .container-fluid {
         padding: 0;
