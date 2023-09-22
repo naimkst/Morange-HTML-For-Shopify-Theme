@@ -70,8 +70,12 @@
 	margin-top: 15px;
 	border-radius: 5px;
 	padding: 10px 45px;
+	background: #141B4D;
+	text-transform: uppercase;
 
-
+	&::before {
+		display: none;
+	}
 
 	&:after {
 		display: none;
@@ -81,8 +85,9 @@
 		background-color: darken($theme-primary-color, 8%);
 	}
 
-	&.s1 {
-		background: #ddd;
+	&.s2 {
+		background: #EBE9EA;
+		color: $dark-gray;
 
 		&:hover {
 			background-color: darken(#ddd, 8%);
