@@ -121,8 +121,8 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="header-login">
-                                        <a class="login-btn" href="wishlist.html"><i class="fi flaticon-heart"></i></a>
+                                    <div class="header-wishlist">
+                                        <a href="wishlist.html"><i class="fi flaticon-heart"></i></a>
                                     </div>
                                     <div class="header-login">
                                         <a class="login-btn" href="login.html"><i
@@ -132,39 +132,87 @@
                                         <button class="cart-toggle-btn"> <i class="fi flaticon-add-to-cart"></i> <span
                                                 class="cart-count">2</span></button>
                                         <div class="mini-cart-content">
+                                            <div class="title">
+                                                <h4>Shopping Cart</h4>
+                                            </div>
                                             <button class="mini-cart-close"><i class="ti-close"></i></button>
                                             <div class="mini-cart-items">
-                                                <div class="mini-cart-item clearfix">
+                                                <p class="top-p">Some items in your cart may sell out.</p>
+                                                <div class="mini-cart-item clearfix" data-bs-toggle="modal"
+                                                    data-bs-target="#popup-quickview">
                                                     <div class="mini-cart-item-image">
                                                         <a href="shop.html"><img
                                                                 src="assets/images/shop/mini-cart/img-1.jpg" alt></a>
                                                     </div>
                                                     <div class="mini-cart-item-des">
-                                                        <a href="shop.html">White Wedding Shoe</a>
-                                                        <span class="mini-cart-item-price">$100.15 x 1</span>
-                                                        <span class="mini-cart-item-quantity"><a href="#"><i
-                                                                    class="ti-close"></i></a></span>
+                                                        <h4><a href="product-single.html">Alejandra</a></h4>
+                                                        <p>One Shoulder Satin Maxi Dress - Red</p>
+                                                        <ul class="product-text-sub">
+                                                            <li>3xl</li>
+                                                            <li class="mx-1">|</li>
+                                                            <li>Vermilion Red</li>
+                                                        </ul>
+                                                        <span class="price">$200.00</span>
+                                                    </div>
+                                                    <div class="pro-single-btn">
+                                                        <div class="quantity cart-plus-minus">
+                                                            <input type="text" value="1">
+                                                            <div class="dec qtybutton"></div>
+                                                            <div class="inc qtybutton"></div>
+                                                            <div class="dec qtybutton">-</div>
+                                                            <div class="inc qtybutton">+</div>
+                                                        </div>
+                                                        <a href="#" class="dlt-btn"><i class="ti-trash"></i></a>
                                                     </div>
                                                 </div>
-                                                <div class="mini-cart-item clearfix">
+                                                <div class="mini-cart-item clearfix" data-bs-toggle="modal"
+                                                    data-bs-target="#popup-quickview">
                                                     <div class="mini-cart-item-image">
                                                         <a href="shop.html"><img
                                                                 src="assets/images/shop/mini-cart/img-2.jpg" alt></a>
                                                     </div>
                                                     <div class="mini-cart-item-des">
-                                                        <a href="shop.html">Long Sleeve Tops</a>
-                                                        <span class="mini-cart-item-price">$230.25 x 2</span>
-                                                        <span class="mini-cart-item-quantity"><a href="#"><i
-                                                                    class="ti-close"></i></a></span>
+                                                        <h4><a href="product-single.html">Alejandra</a></h4>
+                                                        <p>One Shoulder Satin Maxi Dress - Red</p>
+                                                        <ul class="product-text-sub">
+                                                            <li>3xl</li>
+                                                            <li class="mx-1">|</li>
+                                                            <li>Vermilion Red</li>
+                                                        </ul>
+                                                        <span class="price">$200.00</span>
+                                                    </div>
+                                                    <div class="pro-single-btn">
+                                                        <div class="quantity cart-plus-minus">
+                                                            <input type="text" value="1">
+                                                            <div class="dec qtybutton"></div>
+                                                            <div class="inc qtybutton"></div>
+                                                            <div class="dec qtybutton">-</div>
+                                                            <div class="inc qtybutton">+</div>
+                                                        </div>
+                                                        <a href="#" class="dlt-btn"><i class="ti-trash"></i></a>
+                                                    </div>
+                                                </div>
+                                                <div class="mini-cart-item">
+                                                    <div class="mini-cart-item-image">
+                                                        <a href="shop.html"><img
+                                                                src="assets/images/shop/mini-cart/img-1.jpg" alt></a>
+                                                    </div>
+                                                    <div class="mini-cart-item-des">
+                                                        <h3>Are you sure you want to remove this item from your cart?</h3>
+                                                        <p>You can add this item to your Wishlist from here to buy later.</p>
+                                                    </div>
+                                                    <div class="pro-single-btn">
+                                                        <a href="#" class="w-btn"><i class="fi flaticon-heart"></i> Add to wishlist</a>
+                                                        <a href="#" class="dlt-btn"><i class="ti-trash"></i></a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="mini-cart-action clearfix">
-                                                <span class="mini-checkout-price">Subtotal: <span>$330.35</span></span>
                                                 <div class="mini-btn">
-                                                    <a href="checkout.html" class="view-cart-btn s1">Checkout</a>
-                                                    <a href="cart.html" class="view-cart-btn">View Cart</a>
+                                                    <a href="checkout.html" class="view-cart-btn">Checkout</a>
+                                                    <a href="cart.html" class="view-cart-btn s2">View Cart</a>
                                                 </div>
+                                                <p>Taxes and shipping calculated at checkout.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -176,7 +224,6 @@
             </div>
         </header>
         <!-- end of header -->
-        <!-- start of page-title-s2-slide-section-->
 
         <section class="page-title-s4" style="background: #EBE9EA">
             <div class="container-fluid">
@@ -602,54 +649,184 @@
                 <div class="modal-content">
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i
                             class="ti-close"></i></button>
-                    <div class="modal-body d-flex">
-                        <div class="product-details">
-                            <div class="row align-items-center">
-                                <div class="col-lg-5">
-                                    <div class="product-single-img">
-                                        <div class="modal-product">
-                                            <div class="item">
-                                                <img src="assets/images/modal.jpg" alt="">
+                    <div class="modal-body">
+                        <div class="modal-slider-active owl-carousel">
+                            <div class="product-details product-wrap">
+                                <div class="row">
+                                    <div class="col-lg-7">
+                                        <div class="product-single-img owl-carousel">
+                                            <div class="modal-product">
+                                                <div class="item-wrap">
+                                                    <div class="item-img">
+                                                        <img src="assets/images/modal/img-1.jpg" alt="">
+                                                    </div>
+                                                    <div class="item-img">
+                                                        <img src="assets/images/modal/img-2.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-product">
+                                                <div class="item-wrap">
+                                                    <div class="item-img">
+                                                        <img src="assets/images/modal/img-1.jpg" alt="">
+                                                    </div>
+                                                    <div class="item-img">
+                                                        <img src="assets/images/modal/img-2.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <div class="product-item">
+                                            <div class="product-text">
+                                                <h4><a href="product-single.html">Alejandra</a></h4>
+                                                <ul class="product-text-sub">
+                                                    <li>One Shoulder Satin Maxi Dress - Black</li>
+                                                </ul>
+                                                <span class="price">$160.00</span>
+                                                <div class="color-name mt-2">
+                                                    <div>
+                                                        <input type="radio" name="color" id="001" class="aggree color1"
+                                                            checked />
+                                                        <span style="margin:5px"></span>
+                                                        <input type="radio" name="color" class="aggree color2" />
+                                                        <span style="margin:5px"> </span>
+                                                    </div>
+                                                </div>
+                                                <div class="shop-filter-item size">
+                                                    <div class="size-item">
+                                                        <div class="button-group">
+                                                            <input type="radio" id="11" name="size" class="size1"
+                                                                value="1" />
+                                                            <label class="size-btn" for="11">xxs</label>
+                                                        </div>
+                                                        <div class="button-group">
+                                                            <input type="radio" id="12" name="size" class="size1"
+                                                                value="1" />
+                                                            <label class="size-btn" for="12">Xs</label>
+                                                        </div>
+                                                        <div class="button-group">
+                                                            <input type="radio" id="13" name="size" class="size1"
+                                                                value="1" />
+                                                            <label class="size-btn" for="13">X</label>
+                                                        </div>
+                                                        <div class="button-group">
+                                                            <input type="radio" id="14" name="size" class="size1"
+                                                                value="1" />
+                                                            <label class="size-btn" for="14">M</label>
+                                                        </div>
+                                                        <div class="button-group">
+                                                            <input type="radio" id="15" name="size" class="size1"
+                                                                value="1" />
+                                                            <label class="size-btn" for="15">L</label>
+                                                        </div>
+                                                        <div class="button-group">
+                                                            <input type="radio" id="16" name="size" class="size1"
+                                                                value="1" />
+                                                            <label class="size-btn" for="16">XL</label>
+                                                        </div>
+                                                        <div class="button-group">
+                                                            <input type="radio" id="17" name="size" class="size1"
+                                                                value="1" />
+                                                            <label class="size-btn" for="17">XXL</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="update-btn">
+                                                    <a href="#">Update Cart</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-7">
-                                    <div class="product-single-content">
-                                        <h5>Wireless Headphones</h5>
-                                        <h6>120.00 USD</h6>
-                                        <ul class="rating">
-                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                        </ul>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis ultrices
-                                            lectus lobortis, dolor et tempus porta, leo mi efficitur ante, in varius
-                                            felis
-                                            sem ut mauris. Proin volutpat lorem inorci sed vestibulum tempus. Lorem
-                                            ipsum
-                                            dolor sit amet, consectetur adipiscing elit. Aliquam
-                                            hendrerit.
-                                        </p>
-                                        <div class="pro-single-btn">
-                                            <div class="quantity cart-plus-minus">
-                                                <input type="text" value="1">
-                                                <div class="dec qtybutton">-</div>
-                                                <div class="inc qtybutton"></div>
+                            </div>
+                            <div class="product-details product-wrap">
+                                <div class="row">
+                                    <div class="col-lg-7">
+                                        <div class="product-single-img owl-carousel">
+                                            <div class="modal-product">
+                                                <div class="item-wrap">
+                                                    <div class="item-img">
+                                                        <img src="assets/images/modal/img-1.jpg" alt="">
+                                                    </div>
+                                                    <div class="item-img">
+                                                        <img src="assets/images/modal/img-2.jpg" alt="">
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <a href="#" class="theme-btn">Add to cart</a>
+                                            <div class="modal-product">
+                                                <div class="item-wrap">
+                                                    <div class="item-img">
+                                                        <img src="assets/images/modal/img-1.jpg" alt="">
+                                                    </div>
+                                                    <div class="item-img">
+                                                        <img src="assets/images/modal/img-2.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="social-share">
-                                            <span>Share with : </span>
-                                            <ul class="socialLinks">
-                                                <li><a href='#'><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href='#'><i class="fa fa-linkedin"></i></a></li>
-                                                <li><a href='#'><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href='#'><i class="fa fa-instagram"></i></a></li>
-                                                <li><a href='#'><i class="fa fa-youtube-play"></i></a></li>
-                                            </ul>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <div class="product-item">
+                                            <div class="product-text">
+                                                <h4><a href="product-single.html">Alejandra</a></h4>
+                                                <ul class="product-text-sub">
+                                                    <li>One Shoulder Satin Maxi Dress - Black</li>
+                                                </ul>
+                                                <span class="price">$160.00</span>
+                                                <div class="color-name mt-2">
+                                                    <div>
+                                                        <input type="radio" name="color" id="001" class="aggree color1"
+                                                            checked />
+                                                        <span style="margin:5px"></span>
+                                                        <input type="radio" name="color" class="aggree color2" />
+                                                        <span style="margin:5px"> </span>
+                                                    </div>
+                                                </div>
+                                                <div class="shop-filter-item size">
+                                                    <div class="size-item">
+                                                        <div class="button-group">
+                                                            <input type="radio" id="11" name="size" class="size1"
+                                                                value="1" />
+                                                            <label class="size-btn" for="11">xxs</label>
+                                                        </div>
+                                                        <div class="button-group">
+                                                            <input type="radio" id="12" name="size" class="size1"
+                                                                value="1" />
+                                                            <label class="size-btn" for="12">Xs</label>
+                                                        </div>
+                                                        <div class="button-group">
+                                                            <input type="radio" id="13" name="size" class="size1"
+                                                                value="1" />
+                                                            <label class="size-btn" for="13">X</label>
+                                                        </div>
+                                                        <div class="button-group">
+                                                            <input type="radio" id="14" name="size" class="size1"
+                                                                value="1" />
+                                                            <label class="size-btn" for="14">M</label>
+                                                        </div>
+                                                        <div class="button-group">
+                                                            <input type="radio" id="15" name="size" class="size1"
+                                                                value="1" />
+                                                            <label class="size-btn" for="15">L</label>
+                                                        </div>
+                                                        <div class="button-group">
+                                                            <input type="radio" id="16" name="size" class="size1"
+                                                                value="1" />
+                                                            <label class="size-btn" for="16">XL</label>
+                                                        </div>
+                                                        <div class="button-group">
+                                                            <input type="radio" id="17" name="size" class="size1"
+                                                                value="1" />
+                                                            <label class="size-btn" for="17">XXL</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="update-btn">
+                                                    <a href="#">Update Cart</a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
