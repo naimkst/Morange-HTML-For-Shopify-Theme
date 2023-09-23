@@ -17,6 +17,15 @@
 
         .product-for {
             padding-left: 20px;
+
+            @media(max-width:450px){
+                padding-left: 10px;
+            }
+        }
+        .product-nav{
+            .slick-slide {
+                cursor: pointer;
+            }
         }
 
         .col {
@@ -56,6 +65,28 @@
 
         .pro-inner {
             display: flex;
+
+            &.product-videos {
+                display: block!important;
+
+                .product-video {
+                    video {
+                        max-height: 590px;
+                        object-fit: cover;
+                        min-width: 600px;
+
+                        @media (max-width:767px) {
+                            min-width: 450px;
+                        }
+                        @media (max-width:575px) {
+                            width: 100%;
+                            min-width: 100%;
+                        }
+
+                    }
+                }
+            }
+
         }
 
         .col {
@@ -110,29 +141,33 @@
 
         .video-thumb {
             position: relative;
+            z-index: 1;
 
-            .video-btn {
+            &:before {
+                content: "";
+                width: 0px;
+                height: 0px;
+                border-top: 5px solid transparent;
+                border-bottom: 7px solid transparent;
+                border-left: 10px solid #2f426b;
                 position: absolute;
-                left: 50%;
+                left: 52%;
                 top: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                z-index: 2;
+            }
+
+            &:after{
+                position: absolute;
                 width: 40px;
                 height: 30px;
                 background: $white;
+                left: 50%;
+                top: 50%;
                 transform: translate(-50%, -50%);
-
-                &:before {
-                    content: "";
-                    width: 0px;
-                    height: 0px;
-                    border-top: 5px solid transparent;
-                    border-bottom: 7px solid transparent;
-                    border-left: 10px solid #2f426b;
-                    position: absolute;
-                    left: 52%;
-                    top: 50%;
-                    -webkit-transform: translate(-50%, -50%);
-                    transform: translate(-50%, -50%);
-                }
+                content: "";
+                z-index: 1;
             }
         }
 
@@ -302,10 +337,11 @@
                 }
             }
         }
+
         .related-product-wrap.product-wrap {
             .size {
                 margin-top: 10px;
-    
+
                 .size-item {
                     .button-group {
                         .size-btn {
